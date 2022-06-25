@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X-Change</title>
+    <link href="main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+      function myFunc() {
+  // Get the checkbox
+         var checkBox = document.getElementById("myCheck");
+  // Get the output text
+        var text = document.getElementById("timecheck")
+
+  // If the checkbox is checked, display the output text
+        if (checkBox.checked == true){
+            text.style.visibility = "visible";
+  } else{
+    text.style.visibility = "hidden";
+  }
+}
+    </script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col">
+                <a href="index.html">
+                    <img src="img/logo.jpg" style="height:100px;">
+                 </a>
+            </div>
+            <div class="col">
+                <a class="btn btn-primary btn-md" href="listing.html">
+                    List an Item
+                </a>
+            </div>
+            <div class="col">
+                <a class="btn btn-primary btn-md" href="authentication.html">
+                    Become a Lender
+                </a>
+            </div>
+            <div class="col">
+                <a class="btn btn-primary btn-md" href="register.html">
+                    Sign Up
+                </a>
+            </div>
+            <div class="col">
+                <a class="btn btn-primary btn-md" href="login.html">
+                    Login
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <ul class="navigation navbar navbar-light container-fluid" style="background-color: #e3f2fd; height:70px;">
+        <li class="item">
+            <a href="index.html">Home</a>
+        </li>
+        <li class="item">
+            <a href="products.html">Products</a>
+        </li>
+        <li class="item">
+            <a href="faq.html">FAQ</a>
+        </li>
+        <li class="item">
+          <a href="profile.html">Profile</a>
+      </li>
+    </ul>
+    <br>
+    <br>
+    <div>
+     <h1 class="text " style="text-decoration:underline;">List an Item</h1>
+    </div>
+    <div class="container">
+      <form>
+        <!-- 2 column grid layout with text inputs for the first and last names -->
+        <div class="row mb-4">
+          <div class="col">
+            <div class="form-outline">
+              <input type="text" id="form6Example1" class="form-control" />
+              <label class="form-label" for="form6Example1">Item Name</label>
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-outline">
+              <input type="text" id="form6Example2" class="form-control" />
+              <label class="form-label" for="form6Example2">Price(RM/DAY)</label>
+            </div>
+          </div>
+        </div>
+        <!-- Message input -->
+        <div class="form-outline mb-4">
+          <textarea class="form-control" id="form6Example7" rows="4"></textarea>
+          <label class="form-label" for="form6Example7">Item Description</label>
+        </div>
+      
+        <!-- Message input -->
+        <div class="form-outline mb-4">
+          <textarea class="form-control" id="form6Example7" rows="4"></textarea>
+          <label class="form-label" for="form6Example7">Item Specifications</label>
+        </div>
+
+        <div class="form-check d-flex mb-4">
+          <input class="form-check-input me-2" type="checkbox" value="" id="myCheck" onclick="myFunc()">
+          <label class="form-check-label" for="form6Example8">Drop Off at X-Change&nbsp;|</label>
+          <div id="timecheck">
+            <label for="birthdaytime">Drop off time&nbsp;&nbsp;&nbsp;</label>
+            <input type="datetime-local" name="birthdaytime">
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block mb-4">Upload pictures</button>
+        
+      
+        
+      
+        <!-- Submit button -->
+        <button type="submit" class="btn btn-primary btn-block mb-4">Submit</button>
+      </form>
+    </div>
+    
+    
+</body>
+
+<footer class="bg-dark text-center text-white">
+    <div class="container p-4">
+      <section class="mb-4">
+        <a class="btn btn-outline-light btn-floating m-1 fa fa-facebook" href="index.html" role="button"></a>
+        <a class="btn btn-outline-light btn-floating m-1 fa fa-twitter" href="index.html" role="button"></a>
+        <a class="btn btn-outline-light btn-floating m-1 fa fa-instagram" href="index.html" role="button"></a>
+      </section>
+     
+  
+      <!-- Section: Form -->
+      <section class="">
+        <form action="">
+          <!--Grid row-->
+          <div class="row d-flex justify-content-center">
+            <!--Grid column-->
+            <div class="col-auto">
+              <p class="pt-2">
+                <strong>Sign up for our newsletter</strong>
+              </p>
+            </div>
+            <!--Grid column-->
+  
+            <!--Grid column-->
+            <div class="col-md-5 col-12">
+              <!-- Email input -->
+              <div class="form-outline form-white mb-4">
+                <input type="email" id="form5Example21" class="form-control" />
+                <label class="form-label" for="form5Example21">Email address</label>
+              </div>
+            </div>
+            <!--Grid column-->
+  
+            <!--Grid column-->
+            <div class="col-auto">
+              <!-- Submit button -->
+              <button type="submit" class="btn btn-outline-light mb-4">
+                Subscribe
+              </button>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </form>
+        </section>
+     
+      <section class="mb-4">
+        <p>
+          X-Change, your friendly neighbourhood exchange program.
+        </p>
+
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2022 X-Change  |
+      <a class="text-white" href="index.html">X-Change.com</a>
+      <a class="text-white" href="index.html">| Terms-of-Service</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+</html>
